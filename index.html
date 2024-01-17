@@ -1,0 +1,30 @@
+<!-- 
+    Introduzione a Typescript
+
+    Typescript fondamentalmente serve per evitare bug ed errori di assegnazione di variabili all'interno del codice, ti forza ad assegnare ad ogni variabile un tipo immutabile (salvo casi specifici voluti dal dev)
+
+
+    Il compilatore typescript serve perchè il browser da solo non riesce a leggere i file .ts e serve il compilatore appunto per trasformarlo in file .js per compilare basta fare in console tsc "nome del file.ts"
+
+
+    La type inference è quella funzionalità di typescript che ti permettere di omettere il tipo di variabile se nel momento in cui viene creata gli si assegna un valore,perchè appunto typescript ne riconosce ed assegna il type in automatico
+
+    Il type "any" è un type sconsigliato perchè vanifica l'utilizzo di typescript perchè permette di assegnare una variabile qualsiasi tipo di valore 
+
+    il tipo Union ti permette di assegnare più di un type ad una variabile per esempio se la variabile età può accettare sia numeri che stringhe si può scrivere con età: number|string
+
+    il tipo tuple ti permette di definire i type delle variabili nell'ordine in cui vengono scritti per esempio
+
+    myVar[string,number,boolean]  accetterà solo stringa come primo valore, numero come secondo e boolean come terzo . Non si può modificare l'ordine dei type
+
+    le interfacce TS servono per definire gli oggetti con le rispettive variabili e type che poi verranno utilizzati nelle classi
+
+
+    Type ti permette di attribuire ad una variabile un tipo custom per esempio type mioType = number|string ed ogni volta che si attribuisce il tipe mioType sarà come scrivere number|string
+    mentre le interfacce possono usare i type di default più eventuali type custom
+
+
+    i Generics vengono utilizzati quando ancora non si sa che tipo si vuole ad attribuire una variabile oppure se si decide di cambiargli tipo ogni volta che viene fatta la chiamata ad una determinata interface oppure funzione oppure classe
+
+
+ -->
